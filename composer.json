@@ -16,5 +16,13 @@
         "psr-4": {
             "Sedevtest\\Contact\\": "src/"
         }
+    },
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sedevtest\\Contact\\ContactServiceProvider"
+            ]
+        }
     }
 }
