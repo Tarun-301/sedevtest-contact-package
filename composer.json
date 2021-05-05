@@ -1,0 +1,20 @@
+{
+    "name": "sedevtest/contact",
+    "description": "simple contact form",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tarun Sharma",
+            "email": "tarun301@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+
+    "autoload": {
+        "psr-4": {
+            "Sedevtest\\Contact\\": "src/"
+        }
+    }
+}
