@@ -23,8 +23,18 @@ class ContactServiceProvider extends ServiceProvider
 
         $this->publishes([
             __DIR__ . '/config/contact.php'=>config_path('contact.php'),
+            //below line will not create vendor folder inside views
+            // __DIR__. '/views' => resource_path('views/contact'),
+            __DIR__. '/views' => resource_path('views/vendor/contact'),
+            __DIR__. '/database/migrations/' => database_path('migrations')
         ]);
 
+        // $this->publishes([
+        //     __DIR__.'/../resources/views' => resource_path('views/contact'),
+        // ]);
+        // $this->publishes([
+        //     __DIR__.'/../database/migrations/' => database_path('migrations')
+        // ], 'migrations');
     }
 
     public function register()
